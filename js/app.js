@@ -45,8 +45,13 @@ function flipCard() {
         if (firstCard.dataset.pokemon === secondCard.dataset.pokemon) {
             firstCard.removeEventListener('click', flipCard)
             secondCard.removeEventListener('click', flipCard)
+        } else {
+            setTimeout(() => {
+                firstCard.classList.remove('flip')
+                secondCard.classList.remove('flip')
+            }, 2000)
         }
-        console.log("Its working")
+        
         
     }
     
