@@ -5,6 +5,7 @@
 /*---------------------------- Variables (state) ----------------------------*/
 // need variables for the 10 pokimon cards
 let isFlipped = false;
+let onlyTwoAtATime = false
 let firstCard
 let secondCard
 
@@ -33,6 +34,7 @@ cards.forEach(card => card.addEventListener('click', flipCard))
 
 // flip
 function flipCard() {
+    if (onlyTwoAtATime) return;
     this.classList.toggle('flip')
 
     if(!isFlipped) {
@@ -46,9 +48,12 @@ function flipCard() {
             firstCard.removeEventListener('click', flipCard)
             secondCard.removeEventListener('click', flipCard)
         } else {
+            onlyTwoAtATime = true
+
             setTimeout(() => {
                 firstCard.classList.remove('flip')
                 secondCard.classList.remove('flip')
+                onlyTwoAtATime = false
             }, 2000)
         }
         
