@@ -8,11 +8,11 @@
 
 /*------------------------ Cached Element References ------------------------*/
 // need cached elements for the cards, player name, reset button
-
+let cards = document.querySelectorAll(".card")
 
 /*----------------------------- Event Listeners -----------------------------*/
 // need to create clicks for the cards, reset button, and player name
-
+cards.forEach(card => card.addEventListener('click', flipCard))
 
 /*-------------------------------- Functions --------------------------------*/
 // initialize the board
@@ -29,3 +29,6 @@
 
 
 // flip
+function flipCard() {
+    this.classList.toggle('flip')
+}
