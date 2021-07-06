@@ -35,6 +35,8 @@ cards.forEach(card => card.addEventListener('click', flipCard))
 // flip
 function flipCard() {
     if (onlyTwoAtATime) return;
+    if (this === firstCard) return
+    
     this.classList.toggle('flip')
 
     if(!isFlipped) {
