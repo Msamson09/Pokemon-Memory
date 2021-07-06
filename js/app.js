@@ -36,7 +36,7 @@ cards.forEach(card => card.addEventListener('click', flipCard))
 function flipCard() {
     if (onlyTwoAtATime) return;
     if (this === firstCard) return
-    
+
     this.classList.toggle('flip')
 
     if(!isFlipped) {
@@ -63,3 +63,10 @@ function flipCard() {
     }
     
 }
+
+(function randomize () {
+    cards.forEach(card => {
+        let shuffle = Math.floor(Math.random() * 20)
+        card.style.order = shuffle
+    })
+})();
