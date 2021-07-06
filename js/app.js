@@ -4,6 +4,9 @@
 
 /*---------------------------- Variables (state) ----------------------------*/
 // need variables for the 10 pokimon cards
+let isFlipped = false;
+let firstCard
+let secondCard
 
 
 /*------------------------ Cached Element References ------------------------*/
