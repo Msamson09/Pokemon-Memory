@@ -34,4 +34,20 @@ cards.forEach(card => card.addEventListener('click', flipCard))
 // flip
 function flipCard() {
     this.classList.toggle('flip')
+
+    if(!isFlipped) {
+        isFlipped = true;
+        firstCard = this;
+    } else {
+        isFlipped = false;
+        secondCard = this;
+
+        if (firstCard.dataset.pokemon === secondCard.dataset.pokemon) {
+            firstCard.removeEventListener('click', flipCard)
+            secondCard.removeEventListener('click', flipCard)
+        }
+        console.log("Its working")
+        
+    }
+    
 }
