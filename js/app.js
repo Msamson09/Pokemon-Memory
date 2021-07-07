@@ -11,6 +11,7 @@ let firstCard
 let secondCard
 let levelUp = new Audio('/Sounds/levelUp.mp3')
 let themeSong = new Audio('/Sounds/themeSong.mp3')
+let wrong = new Audio('/Sounds/fail.mp3')
 
 
 /*------------------------ Cached Element References ------------------------*/
@@ -58,7 +59,9 @@ function flipCard() {
             }
         } else {
             onlyTwoAtATime = true
-
+            setTimeout(() => {
+                wrong.play()
+            }, 300)
             setTimeout(() => {
                 firstCard.classList.remove('flip')
                 secondCard.classList.remove('flip')
