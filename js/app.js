@@ -9,6 +9,8 @@ let onlyTwoAtATime = false
 let winCounter = 0
 let firstCard
 let secondCard
+let levelUp = new Audio('/Sounds/levelUp.mp3')
+let themeSong = new Audio('/Sounds/themeSong.mp3')
 
 
 /*------------------------ Cached Element References ------------------------*/
@@ -19,6 +21,8 @@ let cards = document.querySelectorAll(".card")
 // need to create clicks for the cards, reset button, and player name
 cards.forEach(card => card.addEventListener('click', flipCard))
 
+// document.getElementById('reset').addEventListener('click', reset)
+
 /*-------------------------------- Functions --------------------------------*/
 // initialize the board
     // reset board with all of the cards
@@ -26,9 +30,6 @@ cards.forEach(card => card.addEventListener('click', flipCard))
     // create a new random locations for the cards
     // reset number of player turns
 
-// winning scenarios
-    // function to establish winning combinations 
-        // needs to be based on the shapes since the order will be random
 
 // render 
 
@@ -51,6 +52,7 @@ function flipCard() {
             firstCard.removeEventListener('click', flipCard)
             secondCard.removeEventListener('click', flipCard)
             winCounter++
+            levelUp.play()
             if (winCounter === 10) {
                 youWon()
             }
@@ -61,7 +63,7 @@ function flipCard() {
                 firstCard.classList.remove('flip')
                 secondCard.classList.remove('flip')
                 onlyTwoAtATime = false
-            }, 2000)
+            }, 1500)
         }
         
         
@@ -70,7 +72,8 @@ function flipCard() {
 }
 
 function youWon() {
-    document.getElementById('message-display').innerHTML = `<center>CONGRATULATIONS ON WINNING THE GAME!</center>`
+    document.getElementById('message-display').innerHTML = `CONGRATULATIONS ON WINNING THE GAME`
+    themeSong.play()
 }
 
 (function randomize () {
@@ -79,3 +82,10 @@ function youWon() {
         card.style.order = shuffle
     })
 })();
+
+// function reset() {
+//     onlyTwoAtATime = false
+//     isFlipped = false
+//     firstCard = null
+//     secondCard = null
+// }
