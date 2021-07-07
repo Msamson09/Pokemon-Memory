@@ -6,6 +6,7 @@
 // need variables for the 10 pokimon cards
 let isFlipped = false;
 let onlyTwoAtATime = false
+let winCounter = 0
 let firstCard
 let secondCard
 
@@ -49,6 +50,10 @@ function flipCard() {
         if (firstCard.dataset.pokemon === secondCard.dataset.pokemon) {
             firstCard.removeEventListener('click', flipCard)
             secondCard.removeEventListener('click', flipCard)
+            winCounter++
+            if (winCounter === 10) {
+                youWon()
+            }
         } else {
             onlyTwoAtATime = true
 
@@ -62,6 +67,10 @@ function flipCard() {
         
     }
     
+}
+
+function youWon() {
+    document.getElementById('message-display').innerHTML = `<center>CONGRATULATIONS ON WINNING THE GAME!</center>`
 }
 
 (function randomize () {
