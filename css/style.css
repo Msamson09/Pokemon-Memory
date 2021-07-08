@@ -5,9 +5,12 @@
 }
 
 body {
-    height: 80vh;
+    height: 100vh;
     display: flex;
     background-color: rgba(36, 218, 36, 0.932);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .game {
@@ -16,7 +19,6 @@ body {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid red;
     perspective: 1000px;
 }
 
@@ -58,6 +60,12 @@ body {
 img {
     width: 100px;
     height: 100px;
+}
+
+h2 {
+    justify-content: center;
+    border: 2px solid red;
+    background: white
 }
 /* need to coloring to: for cards, game title, player name, # of turns played, high score, pokemon, and background*/
 

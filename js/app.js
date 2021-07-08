@@ -13,6 +13,10 @@ let levelUp = new Audio('/Sounds/levelUp.mp3')
 let themeSong = new Audio('/Sounds/themeSong.mp3')
 let wrong = new Audio('/Sounds/fail.mp3')
 
+levelUp.volume = 0.5
+themeSong.volume = 0.5
+wrong.volume = 0.5
+
 
 /*------------------------ Cached Element References ------------------------*/
 // need cached elements for the cards, player name, reset button
@@ -23,6 +27,27 @@ let cards = document.querySelectorAll(".card")
 cards.forEach(card => card.addEventListener('click', flipCard))
 
 // document.getElementById('reset').addEventListener('click', reset)
+
+//need to find a way to toggle mute instead of just mute
+// document.getElementById('mute').addEventListener('click', function() {
+//     if (levelUp.volume = 0.5){
+//         levelUp.volume = 0
+
+//     } else {
+//         levelUp.volume = 0.5
+//     }
+//     if (themeSong.volume = 0.5) {
+//         themeSong.volume = 0
+//     } else {
+//         themeSong.volume = 0.5
+//     }
+//     if (wrong.volume = 0.5) {
+//         wrong.volume = 0
+//     } else {
+//         wrong.volume = 0.5
+//     }
+// })
+
 
 /*-------------------------------- Functions --------------------------------*/
 // initialize the board
