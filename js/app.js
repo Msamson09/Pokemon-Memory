@@ -23,7 +23,6 @@ wrong.volume = 0.5
 let cards = document.querySelectorAll(".card")
 
 /*----------------------------- Event Listeners -----------------------------*/
-// need to create clicks for the cards, reset button, and player name
 cards.forEach(card => card.addEventListener('click', flipCard))
 
 document.getElementById('reset').addEventListener('click', reset)
@@ -116,5 +115,5 @@ function reset() {
     isFlipped = false
     firstCard = null
     secondCard = null
-    
+    cards.forEach(card => card.classList.remove('flip'))
 }

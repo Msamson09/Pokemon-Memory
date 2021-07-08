@@ -1,34 +1,35 @@
 # Pokemon-Memory
 
-Getting Started:
+# Getting Started:
 
-https://pokemon-memory.surge.sh/
+[Play Game](https://pokemon-memory.surge.sh/)
 
 Growing up I enjoyed playing pokemon so building this game was a way to play on that nastalgia. I'm not sure how much relatable this is to the Gen Z's but I'm sure Millenials will enjoy.
 
-Instructions: Click on the cards to match each of the 10 Pokemon. If the two cards do not match, they will flip back over.  If the two cards do match, the cards will stay showing the Pokemon. Once all of the cards have been match, the game has been won.
+## Instructions: 
+Click on the cards to match each of the 10 Pokemon. If the two cards do not match, they will flip back over.  If the two cards do match, the cards will stay showing the Pokemon. Once all of the cards have been match, the game has been won.
 
 
-Screenshots:
+# Screenshots
 
 
 
-Technologies Implemented:
+# Technologies Implemented:
 
-Javascript
-CSS
-HTML
-Git
-Surge
+- Javascript
+- CSS
+- HTML
+- Git
+- Surge
 
 
-Credits:
+# Credits:
 
 Pokemon Art: https://pokemon.wikia.com
 
 Game Sounds: https://www.myinstants.com/search/?name=pokemon
 
-Stretch Goals:
+# Stretch Goals:
 
 Allow player to choose from one of three evolution types
 
