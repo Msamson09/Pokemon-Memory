@@ -28,11 +28,10 @@ cards.forEach(card => card.addEventListener('click', flipCard))
 
 document.getElementById('reset').addEventListener('click', reset)
 
-//need to find a way to toggle mute instead of just mute
 document.getElementById('mute').addEventListener('click', function() {
     if (levelUp.volume == 0.5){
         levelUp.volume = 0
-        
+
     } else {
         levelUp.volume = 0.5
     }
