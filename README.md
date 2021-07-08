@@ -12,7 +12,7 @@ Click on the cards to match each of the 10 Pokemon. If the two cards do not matc
 
 # Screenshots
 
-
+![Game](https://user-images.githubusercontent.com/77376691/124953106-adaabb00-dfc9-11eb-98ca-caa8ed8ca7ab.png)
 
 # Technologies Implemented:
 
