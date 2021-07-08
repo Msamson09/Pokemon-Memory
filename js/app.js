@@ -26,27 +26,27 @@ let cards = document.querySelectorAll(".card")
 // need to create clicks for the cards, reset button, and player name
 cards.forEach(card => card.addEventListener('click', flipCard))
 
-// document.getElementById('reset').addEventListener('click', reset)
+document.getElementById('reset').addEventListener('click', reset)
 
 //need to find a way to toggle mute instead of just mute
-// document.getElementById('mute').addEventListener('click', function() {
-//     if (levelUp.volume = 0.5){
-//         levelUp.volume = 0
-
-//     } else {
-//         levelUp.volume = 0.5
-//     }
-//     if (themeSong.volume = 0.5) {
-//         themeSong.volume = 0
-//     } else {
-//         themeSong.volume = 0.5
-//     }
-//     if (wrong.volume = 0.5) {
-//         wrong.volume = 0
-//     } else {
-//         wrong.volume = 0.5
-//     }
-// })
+document.getElementById('mute').addEventListener('click', function() {
+    if (levelUp.volume == 0.5){
+        levelUp.volume = 0
+        
+    } else {
+        levelUp.volume = 0.5
+    }
+    if (themeSong.volume == 0.5) {
+        themeSong.volume = 0
+    } else {
+        themeSong.volume = 0.5
+    }
+    if (wrong.volume == 0.5) {
+        wrong.volume = 0
+    } else {
+        wrong.volume = 0.5
+    }
+})
 
 
 /*-------------------------------- Functions --------------------------------*/
@@ -111,9 +111,11 @@ function youWon() {
     })
 })();
 
-// function reset() {
-//     onlyTwoAtATime = false
-//     isFlipped = false
-//     firstCard = null
-//     secondCard = null
-// }
+//needs work
+function reset() {
+    onlyTwoAtATime = false
+    isFlipped = false
+    firstCard = null
+    secondCard = null
+    
+}
