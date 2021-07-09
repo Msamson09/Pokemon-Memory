@@ -89,7 +89,7 @@ function flipCard() {
 }
 
 function youWon() {
-    document.getElementById('message-display').innerHTML = `CONGRATULATIONS ON WINNING THE GAME`
+    document.getElementById('message-display').innerHTML = `YOU HAVE CAUGHT THEM ALL!!!`
     themeSong.play()
 }
 
