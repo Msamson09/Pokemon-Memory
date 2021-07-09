@@ -19,7 +19,7 @@ wrong.volume = 0.25
 
 
 /*------------------------ Cached Element References ------------------------*/
-
+let mute = document.getElementById('mute')
 let cards = document.querySelectorAll(".card")
 
 /*----------------------------- Event Listeners -----------------------------*/
@@ -30,19 +30,24 @@ document.getElementById('reset').addEventListener('click', reset)
 document.getElementById('mute').addEventListener('click', function() {
     if (levelUp.volume == 0.25){
         levelUp.volume = 0
-
+        mute.style.backgroundColor = 'red'
     } else {
         levelUp.volume = 0.25
+        mute.style.backgroundColor = 'white'
     }
     if (themeSong.volume == 0.25) {
         themeSong.volume = 0
+        mute.style.backgroundColor = 'red'
     } else {
         themeSong.volume = 0.25
+        mute.style.backgroundColor = 'white'
     }
     if (wrong.volume == 0.25) {
         wrong.volume = 0
+        mute.style.backgroundColor = 'red'
     } else {
         wrong.volume = 0.25
+        mute.style.backgroundColor = 'whilte'
     }
 })
 
