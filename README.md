@@ -7,7 +7,10 @@
 Growing up I enjoyed playing pokemon so building this game was a way to play on that nastalgia. I'm not sure how much relatable this is to the Gen Z's but I'm sure Millenials will enjoy.
 
 ### Instructions: 
-Click on the cards to match each of the 10 Pokemon. If the two cards do not match, they will flip back over.  If the two cards do match, the cards will stay showing the Pokemon. Once all of the cards have been matched, the game has been won.
+- Click on the cards to match each of the 10 Pokemon 
+- If the two cards do not match, they will flip back over 
+- If the two cards do match, the cards will stay showing the Pokemon 
+- Once all of the cards have been matched, the game has been won
 
 
 ## Screenshots:

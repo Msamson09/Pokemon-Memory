@@ -50,11 +50,6 @@ document.getElementById('mute').addEventListener('click', function() {
 /*-------------------------------- Functions --------------------------------*/
 
 
-
-// render 
-
-
-// flip
 function flipCard() {
     if (onlyTwoAtATime) return;
     if (this === firstCard) return
@@ -105,7 +100,6 @@ function youWon() {
     })
 })();
 
-//needs work
 function reset() {
     onlyTwoAtATime = false
     isFlipped = false
