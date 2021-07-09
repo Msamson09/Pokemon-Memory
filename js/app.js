@@ -37,17 +37,13 @@ document.getElementById('mute').addEventListener('click', function() {
     }
     if (themeSong.volume == 0.25) {
         themeSong.volume = 0
-        mute.style.backgroundColor = 'red'
     } else {
         themeSong.volume = 0.25
-        mute.style.backgroundColor = 'white'
     }
     if (wrong.volume == 0.25) {
         wrong.volume = 0
-        mute.style.backgroundColor = 'red'
     } else {
         wrong.volume = 0.25
-        mute.style.backgroundColor = 'whilte'
     }
 })
 
